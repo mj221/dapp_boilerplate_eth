@@ -1,7 +1,7 @@
-const ERCToken  = artifacts.require("ERCToken")
+const _  = artifacts.require("_")
 
 module.exports = async (deployer) => {
 
-  await deployer.deploy(ERCToken)
+  await deployer.deploy(_)
 
 };
