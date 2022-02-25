@@ -3,6 +3,7 @@ import React, { Component, useState } from 'react';
 import detectEthereumProvider from '@metamask/detect-provider'
 
 import './App.css';
+import Navbar from './Navbar'
 
 var Web3 = require('web3');
 
@@ -83,7 +84,7 @@ class App extends Component {
     return(
       <div>
         <Navbar account={this.state.account} loadWeb3= {this.loadWeb3.bind(this)}/>
-        
+
       </div>
     );
   }
